@@ -1,0 +1,7 @@
+*.DS_Store
+**/assets
+**/src
+**/tensorboard
+*.png
+**.ipynb_checkpoints/
+*.jpeg
