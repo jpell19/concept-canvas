@@ -18,7 +18,10 @@ root_word = "smug"
 
 root_sentence = f'{positve_root} {root_word}'
 
-synonyms = ["arrogant", "self-satisfied", "excited", "complacent", "proud"]
+synonyms  = [
+    "amused", "excited", "victorious" ,"surprised",
+    "proud", "cocky", "confident", "awestruck"
+]
 
 antonyms = ["humble", "modest", "timid", "grateful", "diffident"]
 
@@ -26,9 +29,9 @@ synonym_senetences = [f'{positve_root} {synonym}' for synonym in synonyms]
 
 antonym_senetences = [f'{negative_root} {antonym}' for antonym in antonyms]
 
-words = [root_word] + synonyms + antonyms
+words = [root_word] + synonyms #+ antonyms
 
-prompts = [root_sentence] + synonym_senetences + antonym_senetences
+prompts = [root_sentence] + synonym_senetences #+ antonym_senetences
 
 text_inputs = tokenizer(
                 prompts,
